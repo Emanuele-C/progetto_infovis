@@ -95,8 +95,7 @@ const run = function(data){
 
     let dataSet;
 
-// d3.json(json_path)
-//     .then(loadDataSet);
+
     render(data, 0);
 
     function render(dataSet, transitionTime) {
@@ -163,8 +162,9 @@ const run = function(data){
             })
             .attr('ry', function (d) {
                 return d.larghezzaAddome * 3
-            })    
-             .on("click", function (target) {
+            })
+            .style("cursor", "pointer")
+            .on("click", function (target) {
                 return onClickBody(target, true);
             })
             .on("contextmenu", function (target) {
@@ -198,7 +198,8 @@ const run = function(data){
             })
             .attr("r", function (d) {
                 return d.eyeDimension
-            })        
+            })
+           .style("cursor", "pointer")
            .on("click", function (target) {
                 return onClickEye(target, true);
             })
@@ -231,7 +232,8 @@ const run = function(data){
             })
             .attr("r", function (d) {
                 return d.eyeDimension
-            })        
+            }) 
+           .style("cursor", "pointer")
            .on("click", function (target) {
                 return onClickEye(target, true);
             })
@@ -258,6 +260,7 @@ const run = function(data){
             .attr("fill", "None")
             .attr("stroke-width", 2)
             .attr("stroke", "black")
+            .style("cursor", "pointer")
             .on("click", function (target) {
                 return onClickLeg(target, true);
             })
@@ -285,6 +288,7 @@ const run = function(data){
             .attr("fill", "None")
             .attr("stroke-width", 2)
             .attr("stroke", "black")
+            .style("cursor", "pointer")
             .on("click", function (target) {
                 return onClickLeg(target, true);
             })
@@ -313,6 +317,7 @@ const run = function(data){
             .attr("fill", "None")
             .attr("stroke-width", 2)
             .attr("stroke", "black")
+            .style("cursor", "pointer")
             .on("click", function (target) {
                 return onClickLeg(target, true);
             })
@@ -340,6 +345,7 @@ const run = function(data){
             .attr("fill", "None")
             .attr("stroke-width", 2)
             .attr("stroke", "black")
+            .style("cursor", "pointer")
             .on("click", function (target) {
                 return onClickLeg(target, true);
             })
@@ -367,7 +373,8 @@ const run = function(data){
             .attr("fill", "None")
             .attr("stroke-width", 2)
             .attr("stroke", "black")
-             .on("click", function (target) {
+            .style("cursor", "pointer")
+            .on("click", function (target) {
                 return onClickLeg(target, true);
             })
             .on("contextmenu", function (target) {
@@ -394,6 +401,7 @@ const run = function(data){
             .attr("fill", "None")
             .attr("stroke-width", 2)
             .attr("stroke", "black")
+            .style("cursor", "pointer")
             .on("click", function (target) {
                 return onClickLeg(target, true);
             })
